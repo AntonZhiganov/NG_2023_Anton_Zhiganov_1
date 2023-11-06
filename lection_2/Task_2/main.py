@@ -1,4 +1,9 @@
 elements = input("Enter elements: ")
 elementList = elements.split() 
-numberElement = sum(1 for item in elementList if item.replace(".", "", 1).replace(",", "", 1).replace(" ", "", 1).isdigit())
-print("Number in list: ", numberElement)
+numberElement = 0
+
+for num in elementList :
+    if num.replace(" ", "").isdigit():
+        numberElement += 1
+        
+print("Nember in list: ", numberElement)

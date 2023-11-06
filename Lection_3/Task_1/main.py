@@ -7,3 +7,5 @@ for char in set(contentFile):
     result.update({char : contentFile.count(char)})
 
 print(result)
+
+openFile.cloce()
