@@ -1,21 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="{{ url_for('static', filename = 'js/script.js') }}"></script>
 
-    </head>
+</head>
+<body>
 
-    <body>
+    <input id = "value1" type="text" name="value1" placeholder="Enter your first number">
+    <br>
+    <input id = "value2" type="text" name="value2" placeholder="Enter your second number">
+    <br>
+    <button onclick="addition()">+</button>
+    <button onclick="substraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">:</button>
 
-        <h1>what do you want</h1>
-        <a href="plus.html">addition numbers</a>
-        <br>
-        <a href="/minus">subtract numbers</a>
-        <br>
-        <a href="/multiply">multiply numbers</a>
-        <br>
-        <a href="/divide">divide the numbers</a>
+    <div id = "resultat">
 
+    </div id>
 
-    </body>
-
+</body>
 </html>

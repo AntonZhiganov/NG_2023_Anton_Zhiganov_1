@@ -1,20 +1,11 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
-server = Flask(__name__)
+server = Flask(__name__, static_folder = "static" )
 
 @server.route("/")
 def index():
-    
     return render_template("index.html")
-    
-@server.route("/plus")
-def plus():
 
-    value1= float(request.args.get("value1"))
-    value2 = float(request.args.get("value2"))
-    value= value1 + value2
-    
-    return render_template('result.html', value=value)
+server.run (host = "0.0.0.0", port = 8080)
 
-if __name__ == "__main__":
-    server.run(host="0.0.0.0", port=8080)
+
