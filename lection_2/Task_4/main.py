@@ -1,5 +1,6 @@
 userList = input("Enter word: ")
-vowels = "eyuioaEYUIOA"
+userList = userList.lower()
+vowels = "eyuioa"
 
 print("only vowels: ")
 

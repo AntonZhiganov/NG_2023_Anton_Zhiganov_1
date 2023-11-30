@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="{{ url_for('static', filename = 'js/script.js') }}"></script>
+
+</head>
+<body>
+
+    <input id = "value1" type="text" name="value1" placeholder="Enter your first number">
+    <br>
+    <input id = "value2" type="text" name="value2" placeholder="Enter your second number">
+    <br>
+    <button onclick="addition()">+</button>
+    <button onclick="substraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">:</button>
+
+    <div id = "resultat">
+
+    </div id>
+
+</body>
+</html>
