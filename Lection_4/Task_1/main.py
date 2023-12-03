@@ -7,3 +7,4 @@ def index():
     return render_template("index.html")
 
 server.run (host = "0.0.0.0", port = 8080)
+
